@@ -17,6 +17,7 @@ pip install gitpython
 ```
 <img alt="Deploy to Salesforce"
        src="https://raw.githubusercontent.com/vitaliaventel/SalesforceTeamCityStart/master/images/cmd.png">
+
 3)	build.properties, build.xml, config.ini, package_generator.py, packagexml_template.xml **must be** on the same level as src directory.
 
 *Create project and build*
@@ -82,8 +83,8 @@ python.exe %teamcity.build.checkoutDir%\package_generator.py
 1)	Go to ‘Build Features’ tab and click ‘Add build feature’ button.
 2)	Choose build feature – Commit status publisher.
 3)	Choose VCS Root that was created in Configure VCS for develop branch section.
-4)	Choose publisher – GitLab.
-5)	Enter GitLab URL.
-6)	Enter Private Token.
+4)	Choose publisher – GitHub.
+5)	Enter username of your Github account.
+6)	Enter password to your Github account.
 7)	Click ‘Test connection’ button.
 8)	Click ‘Save’ button.
