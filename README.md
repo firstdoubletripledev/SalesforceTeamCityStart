@@ -40,10 +40,18 @@ pip install gitpython
 2)	Choose Runner type – **Command Line**.
 3)	Enter step name. (for example ‘Generate package.xml’)
 4)	Enter ‘Custom script’:
+If you have installed agent on the same disc as a python then you can use next command
 ```cmd
 cd %PYTHONPATH%
 python.exe %teamcity.build.checkoutDir%\package_generator.py
 ```
+otherwise you should use
+```<DISC_NAME_WHERE_PYTHON_IS_INSTALLED> for example 
+C:
+cd %PYTHONPATH%
+python.exe %teamcity.build.checkoutDir%\package_generator.py
+```
+
 5)	Click ‘Save’ button.
 6)	Click ‘Add build step’ button.
 7)	Choose Runner type – **ANT**.
