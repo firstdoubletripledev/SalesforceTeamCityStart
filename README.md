@@ -46,7 +46,7 @@ cd %PYTHONPATH%
 python.exe %teamcity.build.checkoutDir%\package_generator.py
 ```
 otherwise you should use
-```<DISC_NAME_WHERE_PYTHON_IS_INSTALLED> for example 
+```cmd <DISC_NAME_WHERE_PYTHON_IS_INSTALLED> for example 
 C:
 cd %PYTHONPATH%
 python.exe %teamcity.build.checkoutDir%\package_generator.py
